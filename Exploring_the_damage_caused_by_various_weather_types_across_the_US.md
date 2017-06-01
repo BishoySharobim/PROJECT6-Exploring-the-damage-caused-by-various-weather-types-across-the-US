@@ -30,6 +30,7 @@ knitr::opts_chunk$set(cache=TRUE)
 ```
 
 <br> 
+
 **Downloading and reading data into R**  
 The data was downloaded from where it is stored online onto my local hard drive. 
 
@@ -70,6 +71,7 @@ The downloaded Stormdata was unzipped using the R.utils package. After that it w
 ```
 
 <br>
+
 **Exploring data**  
 Below I explore the data looking at the variable names of Stormdata, the dimension of the data, the first few observations of the data, etc.
 
@@ -243,6 +245,7 @@ And I also examine the differnet type of events that are recorded across differe
 ```
 
 <br>
+
 Through the exploration, we find that before 1996, they only record TSTM WIND, HAIL, TORNADO. Whilst from 1997, they record over 20 events.
 
 Below are provided definitions for most of the 37 variables of the dataset:
@@ -286,6 +289,7 @@ Below are provided definitions for most of the 37 variables of the dataset:
 37.	REFNUM:
 
 <br>
+
 **Subsetting data**
 
 The data was subsetted for observations recorded only after 1996 as previous years had very few event types recorded.
@@ -302,6 +306,7 @@ The columns were also subsetted to get rid of unnecessary variables.
 ```
 
 <br>
+
 **(1) Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?**
 
 Below, we remove results where fatalities and injuries both equal to 0. 
@@ -347,6 +352,7 @@ We create column graph plots for the top 10 events which cause the most injuries
 ```
 
 <br>
+
 **(2) Across the United States, which types of events have the greatest economic consequences?**
 
 First, I remove all observations with no recorded property and crop damage. Then I deal with the PROPDMGEXP and CROPDMGEXP variables by assigning numerical values to their elements.
@@ -425,6 +431,7 @@ Following this, I create two new variables which provide an accurate representat
 ```
 
 <br>
+
 Below, using the aggregate function, the total sum value of crop and the total sum value of property damage for different weather types across all years are obtained.
 
 
@@ -442,6 +449,7 @@ Below, using the aggregate function, the total sum value of crop and the total s
 ```
 
 <br>
+
 Now I plot the total damage values caused by the top 10 events that resulted in the highest recorded property and crop damage.
 
 
@@ -511,6 +519,7 @@ Examining the economic damage and I inititate the call to plot...
 ![](Exploring_the_damage_caused_by_various_weather_types_across_the_US_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 <br>
+
 Examining the damage caused to populaton health and I initiate the call to plot...
 
 
