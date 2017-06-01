@@ -3,23 +3,13 @@ Bishoy Sharobim
 25/05/2015 
 
 ## Synopsis
-The aim of this data analysis is to explore the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database to address two key questions, which are:
+The aim of this data analysis is to explore the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database to address two key questions, which are: (1) Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health? (2) Across the United States, which types of events have the greatest economic consequences?
 
-(1) Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
+I hypothesise that  drought would cause the great economic damage, while flooding would cause the greatest population damage. The data used for this investigation was a tall and thin 47 MB Storm data spreadsheet containing  characteristics of major storms and weather events in the US, including when and where they occur, as well as estimates of any fatalities, injuries, and property damage. 
 
-(2) Across the United States, which types of events have the greatest economic consequences?
+To complete the analysis, data recorded after 1996 was subsetted as it was only then they started to record many more event types and only 13 out of the 37 variables were considered as the others were superflous for my purposes. To address the first question, the main variables analysed were the "EVTYPE", "FATALITIES" and "INJURIES" and for the second question, it was "EVTYPE", "PROPDMG", "PROPDMGEXP", "CROPDMG" and "CROPDMGEXP".
 
-I hypothesis that  drought would cause the great economic damage, while flooding would cause the greatest population damage.
-
-The data used for this investigation was a tall and thin 47 MB Storm data spreadsheet containing  characteristics of major storms and weather events in the US, including when and where they occur, as well as estimates of any fatalities, injuries, and property damage. 
-
-To complete the analysis, data recorded after 1996 was subsetted as it was only then they started to record many more event types and only 13 out of the 37 variables were considered as the others were superflous for my purposes.
-
-To address the first question, the main variables analysed were the "EVTYPE", "FATALITIES" and "INJURIES" and for the second question, it was "EVTYPE", "PROPDMG", "PROPDMGEXP", "CROPDMG" and "CROPDMGEXP".
-
-The results of the analysis led me to conclude that considering total population health, excessive heat and tornados are the most hamful. Tornados cause the most injuries by a large gap, whilst excessive heat causes the most deaths.
-
-The events that cause the most economic damage are floods. Droughts and floods cause the most crop damage, whilst floods and hurricanes/typhoons cause the most property damage.
+The results of the analysis led me to conclude that considering total population health, excessive heat and tornados are the most hamful. Tornados cause the most injuries by a large gap, whilst excessive heat causes the most deaths. The events that cause the most economic damage are floods. Droughts and floods cause the most crop damage, whilst floods and hurricanes/typhoons cause the most property damage.
 
 <br>
 
